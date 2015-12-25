@@ -1,5 +1,9 @@
 class Array
   def unique_uniq
-    # code goes here
+  	uniq = []
+  	self.each do |x|
+  		uniq << x unless uniq.include?(x)
+  	end
+  	uniq
   end
 end
