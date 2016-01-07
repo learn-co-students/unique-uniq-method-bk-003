@@ -1,5 +1,11 @@
+require 'pry'
+
 class Array
   def unique_uniq
-    # code goes here
+    arr = []
+    self.each do |x|
+      arr << x unless arr.include?(x)
+    end
+    arr
   end
 end
